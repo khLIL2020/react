@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Img from './imageInSrc.jpg'
-function App() {
-  return (
-    <div className="App">
-      
-      <>
-  <div style={{border: 'solid 1px black', maxWidth: '100vw'}}>
-    <h1 className="title red">Khalil Ben Zina</h1>
-    <br />
-    <img src={Img}/>
-    <br />
-    <img src="/imageInPublic.jpg" />
+import React from "react";
+import Photo from "./Component/Profile/ProfilePhoto";
+import Adress from "./Component/Profile/Address";
+import FullName from "./Component/Profile/FullName";
+
+const App = () => (
+  <div class ="all">
+    
+  <div class ="photo">
+    <Photo/>
   </div>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/7fPXI_MnBOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</>
+  <div class ="FullName">
+   Full name:<FullName/>
+ </div>
+ 
+  <div class ="Adress">
+   Adress:<Adress/>
+ </div>
+  </div>
 
-    </div>
-  );
-}
-
-export default App;
+  
+ );
+ export default App;

@@ -1,9 +1,7 @@
-.title
+.all
 {
-  color:teal ;
-  
-}
-.red
-{
-  color: red;
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+  width: 202px;
 }
