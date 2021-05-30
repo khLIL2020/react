@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 
 const Profile= props => {
     console.log(`props:`, props.name);
@@ -21,5 +21,6 @@ const Profile= props => {
 Profile.defaultProps = {
     fullName: "KHalil"
 }
-
-   ;
+Profile.propTypes = {
+    enumProp: PropTypes.oneOf([true, false, 0, "Unknown"]),
+}
